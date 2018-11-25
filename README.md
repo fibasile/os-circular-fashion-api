@@ -1,24 +1,13 @@
-# README
+# os-circular-fashion-api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on rails REST API for the os-circular-fashion catalogue.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+Install rails, ruby 2.3 and run migrations
 
-* System dependencies
+Create a .env file with the GOOGLE_KEY and GOOGLE_SECRET keys matching your Google API Keys for web application. Make sure the redirect url matches `http://yoururl/auth/google/callback`
 
-* Configuration
+Authentication is implemented using [devise-token-auth](https://devise-token-auth.gitbook.io)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See [os-circular-fashion-nextjs](http://github.com/fibasile/os-circular-fashion-nextjs) as an example client.
